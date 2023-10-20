@@ -42,7 +42,7 @@
   justify-content: flex-start;
 
   padding: 8px 4px;
-  gap: 8px;
+  gap: 4px;
 
   border-top: 1px solid var(--light-text);
   position: relative;
@@ -60,6 +60,7 @@
 
 .form-group .btn-wrapper {
   display: flex;
+  flex-direction: column;
   gap: 12px;
   align-items: center;
   justify-content: center;
@@ -72,7 +73,7 @@
   font-weight: 700;
   text-transform: uppercase;
   padding: 12px;
-  width: 25%;
+  width: 100%;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -90,13 +91,32 @@
 .form-group .chackbox-wrapper {
   color: var(--light-grey);
   display: flex;
-  gap: 8px;
+  justify-content: center;
+  flex-direction: column;
   margin: 32px 0;
-  position: relative;
   width: 100%;
 }
 
+.form-group .chackbox-wrapper .checkbox {
+  display: flex;
+  gap: 4px;
+}
+
 .form-group .chackbox-wrapper span{
-  position: absolute;
   right: 0;
+}
+
+@media (min-width: 768px) {
+  .form-group .btn-wrapper {
+    flex-direction: row;
+  }
+
+  .form-group .btn-wrapper .btn {
+    width: 25%;
+  }
+
+  .form-group .chackbox-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
