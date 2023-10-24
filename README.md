@@ -1,27 +1,55 @@
-# DesafioSmartfit
+# Desafio Frontend - Smart Fit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+![Smart Fit](./src/assets/images/svg/logo.svg)
 
-## Development server
+Este repositório contém a solução para o desafio de [Front-end da Smart Fit](https://github.com/bioritmo/front-end-code-challenge-smartsite/tree/master).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para o desenvolvimento foi utilizado o framework Angular seguindos os passos presentes no video da **Fernanda Kipper** e você pode acessar este vídeo [aqui](https://www.youtube.com/watch?v=ozZXMkp8MnQ).
 
-## Code scaffolding
+Esta solução está no ar e você pode acessar através deste link https://desafio-smartfit.vercel.app/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Sobre o desafio
 
-## Build
+A Smart Fit é uma empreasa que atua no segmento de fitness e passou por várias mudanças durante a pandemia. Surgiu a necessidade desenvolver uma página para buscar unidades abertas ou fechadas para consulta e reserva. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+De acordo com as Regras de negócio definidas foram implementadas as seguintes funcionalidades neste desafio:
 
-## Running unit tests
+### Funcionalidades
+[x] Carregar unidades através do arquivo JSON [locations.json](https://test-frontend-developer.s3.amazonaws.com/data/locations.json) utilizando o método `GET`.
+[x] Busca por todas as unidades.
+[x] Busca por unidades com filtros.
+[x] Previsão do número de resultados encontrados.
+[x] Listagem das unidades encontradas após a busca.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Regras de negócio
+- Filtra unidades abertas ou fechadas.
+- Filtra unidades por período de funcionamento.
+- Exibe a mensagem "Nenhuma unidade encontrada" quando não há resultados.
+- Valida e exibe os ícones corretos de acordo com o status da unidade.
 
-## Running end-to-end tests
+## Layout
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+O layout da aplicação foi baseado nos materiais disponibilizados, incluindo designs para dispositivos móveis e desktop, cores, imagens e fontes. A fidelidade ao layout proposto foi mantida, e a aplicação é responsiva para dispositivos móveis, tablets e desktops.
 
-## Further help
+## Como Executar
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para executar a aplicação localmente, siga os passos abaixo:
+
+1. Clone este repositório:
+
+```bash
+  git clone https://github.com/CaioSouzalimaa/desafio-smartfit
+  cd desafio-smartfit
+```
+
+2. Instale as dependências
+
+```bash
+  npm install
+```
+
+3. Inicie a aplicação
+
+```bash
+  npm start ou ng serve
+```
